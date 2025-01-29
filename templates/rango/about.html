@@ -6,12 +6,20 @@
 {% endblock %}
 
 {% block body_block %}
-    <p>Visits: {{ visits }}</p>
-    <h1>Rango says...</h1>
-    <div>
-        here is the about page. <br />
-        <strong>{{ boldmessage }}</strong><br />
+    <div class="jumbotron p-4">
+        <div class="container">
+            <h1 class="jumbotron-heading">Rango says...</h1>
+            <div>
+                <h2 class="h2">
+                    <div>
+                        here is the about page. <br />
+                        <strong>{{ boldmessage }}</strong><br />
+                    </div>
+            </div>
+        </div>
     </div>
+    <p>Visits: {{ visits }}</p>
+
     <div>
         <img src="{% static 'images/rango.jpg' %}" alt="Picture of Rango" /><br />
         <img src="{{ MEDIA_URL }}cat.jpg" alt="Picture of a Cat." /><br />
